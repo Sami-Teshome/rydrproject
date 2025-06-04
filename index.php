@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 /**
  * Dit bestand is een héél belangrijk bestand van je applicatie.
  * Alle websitebezoeken komen eerst binnen via deze index.php.

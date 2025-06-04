@@ -415,10 +415,17 @@ footer .footer-links .links ul a {
   font-size: 1em;
   color: #90A3BF;
 }
+.carsUp {
+  display: show;
+}
+.all-cars{
+  display: none;
+  position: relative;
+}
 
 .cars {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
 }
 .cars .car-details {

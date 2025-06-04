@@ -38,3 +38,16 @@ if (modal) {
         }
     });
 }
+
+function toonalleautos() {
+  let allcars = document.getElementById("all-cars");
+  let uppercars = document.getElementById("carsUp");
+
+  if (allcars.style.display === "none") {
+    allcars.style.display = "block";
+    uppercars.style.display = "none";
+  } else {
+    allcars.style.display = "none";
+    uppercars.style.display = "block";
+  }
+}

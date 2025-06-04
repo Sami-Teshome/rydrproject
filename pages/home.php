@@ -1,5 +1,5 @@
 <?php require "includes/header.php" ?>
-    <header>
+    <header id= "carsUp"; class="carsUp">
         <div class="advertorials">
             <div class="advertorial">
                 <h2>Hét platform om een auto te huren</h2>
@@ -14,12 +14,12 @@
                 <a href="#" class="button-primary">Huur een bedrijfswagen</a>
                 <img src="assets/images/car-rent-header-image-2.png" alt="">
                 <img src="assets/images/header-block-background.svg" alt="" class="background-header-element">
-
             </div>
         </div>
     </header>
 
     <main>
+<div id= "carsUp"; class="carsUp";>
     <h2 class="section-title">Populaire auto's</h2>
     <div class="cars">
         <?php for ($i = 0; $i <= 3; $i++) : ?>
@@ -67,7 +67,35 @@
         <?php endfor; ?>
     </div>
     <div class="show-more">
-        <a class="button-primary" href="#">Toon alle</a>
+        <a onclick= "toonalleautos();"; id = "show-more"; class="button-primary" href="#">Toon alle</a>
+    </div>
+</div>
+    
+    <div id= "all-cars"; class="all-cars";>
+        <h2>Alle auto's die U kunt huren</h2>
+    <div class="cars">
+        <?php for ($i = 0; $i <= 11; $i++) : ?>
+            <div class="car-details">
+                <div class="car-brand">
+                    <h3>Koenigegg</h3>
+                    <div class="car-type">
+                        Sport
+                    </div>
+                </div>
+                <img src="assets/images/products/car%20(<?= $i ?>).svg" alt="">
+                <div class="car-specification">
+                    <span><img src="assets/images/icons/gas-station.svg" alt="">90l</span>
+                    <span><img src="assets/images/icons/car.svg" alt="">Schakel</span>
+                    <span><img src="assets/images/icons/profile-2user.svg" alt="">2 Personen</span>
+                </div>
+                <div class="rent-details">
+                    <span><span class="font-weight-bold">€249,00</span> / dag</span>
+                    <a href="/car-detail" class="button-primary">Bekijk nu</a>
+                </div>
+            </div>
+        <?php endfor; ?>
+    </div>
+    </div>
     </div>
     </main>
 
